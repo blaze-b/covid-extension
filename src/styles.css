@@ -1,0 +1,78 @@
+/* Set default font size and box sizing */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin and padding */
+  body,
+  form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set form input to take full width */
+  .form-data input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Set search button style */
+  .search-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Set loading and error message styles */
+  .result .loading,
+  .result .errors {
+    margin-top: 1rem;
+    color: #f00;
+  }
+  
+  /* Set result container styles */
+  .result-container {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Set responsive styles */
+  @media (max-width: 600px) {
+    /* Set font size to 14px for smaller screens */
+    html {
+      font-size: 14px;
+    }
+  
+    /* Adjust padding and margin for smaller screens */
+    .form-data input[type="text"] {
+      padding: 0.25rem;
+    }
+  
+    .search-btn {
+      padding: 0.25rem 0.5rem;
+    }
+  
+    .result-container {
+      padding: 0.5rem;
+    }
+  }
+  
