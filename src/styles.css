@@ -1,78 +1,114 @@
 /* Set default font size and box sizing */
 html {
-    font-size: 16px;
-    box-sizing: border-box;
+  font-size: 16px;
+  box-sizing: border-box;
   }
   
   *,
   *::before,
   *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
   }
   
   /* Remove default margin and padding */
   body,
   form {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   }
   
   /* Set form input to take full width */
   .form-data input[type="text"] {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #007aff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
   }
   
   /* Set search button style */
   .search-btn {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #007aff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
   }
   
   .search-btn:hover {
-    background-color: #0062cc;
+  background-color: #0062cc;
+  transform: scale(1.05);
   }
   
   /* Set loading and error message styles */
   .result .loading,
   .result .errors {
-    margin-top: 1rem;
-    color: #f00;
+  margin-top: 1rem;
+  color: #f00;
+  font-size: 1.2rem;
+  font-weight: bold;
   }
   
   /* Set result container styles */
   .result-container {
-    margin-top: 1rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 5px;
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
   }
   
-  /* Set responsive styles */
+  /* Set responsive styles /
   @media (max-width: 600px) {
-    /* Set font size to 14px for smaller screens */
-    html {
-      font-size: 14px;
-    }
-  
-    /* Adjust padding and margin for smaller screens */
-    .form-data input[type="text"] {
-      padding: 0.25rem;
-    }
-  
-    .search-btn {
-      padding: 0.25rem 0.5rem;
-    }
-  
-    .result-container {
-      padding: 0.5rem;
-    }
+  / Set font size to 14px for smaller screens */
+  html {
+  font-size: 14px;
   }
   
+  /* Adjust padding and margin for smaller screens */
+  .form-data input[type="text"] {
+  padding: 0.25rem;
+  font-size: 1rem;
+  }
+  
+  .search-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  }
+  
+  .result-container {
+  padding: 0.5rem;
+  font-size: 1rem;
+  }
+  }
+  
+  /* Additional styles for responsiveness */
+  .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  }
+  
+  .enter-country {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  }
+  
+  .result {
+  margin-top: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+  .enter-country {
+  font-size: 1.2rem;
+  }
+  }

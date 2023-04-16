@@ -13,7 +13,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      clean : true,
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
@@ -21,7 +22,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/manifest.json', to: 'manifest.json' },
-        { from: './src/styles.css', to: 'styles.css' }
+        { from: './src/styles.css', to: 'styles.css' },
+        { from: './src/icons', to: 'icons' }
       ],
     })
   ],
